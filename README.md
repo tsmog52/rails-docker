@@ -1,24 +1,25 @@
-# README
+## 環境構築方法
+仕様と環境
+- Dockerを使用します。
+- DBはpostgres 12を使用します。
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## 手順
 
-Things you may want to cover:
+1. リポジトリのクローン
+```
+git clone git@github.com:tsmog52/rails-docker.git
+```
 
-* Ruby version
+2. コンテナの立ち上げ(再構築)
+```
+docker-compose up --build
+```
 
-* System dependencies
+3. 動作確認
+ブラウザ上で`localhost:3000`に接続しアプリケーションが表示されればOK
 
-* Configuration
+次回からはのコンテナの立ち上げは以下のコマンドのみで実行
+```
+docker-compose up
+```
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
